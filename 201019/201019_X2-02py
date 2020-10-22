@@ -1,0 +1,4 @@
+# Write a program that has 5 names in a list.
+
+#    Replace the items at index 2 and 4 with "Foo" and "Bar" respectively.
+
