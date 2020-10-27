@@ -56,5 +56,4 @@ https://www.markdownguide.org/cheat-sheet
 2. Give the file a title using the # syntax.
 3. Give a description of the repository under that heading.
 4. (Bonus) Create a table of contents that will link to the folder for each topic.
-4. (Bonus) Create a table of contents that will link to the folder for each topic.
 (This will be your notebook for the class, keep it up to date!)

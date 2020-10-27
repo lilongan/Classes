@@ -1,0 +1,69 @@
+<!-- HTML Nested Tags -->
+<!-- Nest HTML tags -->
+
+<!-- simple nesting -->
+<div>
+    <p>
+        I am some content
+    </p>
+    <p>
+        I am more content
+    </p>
+</div>
+
+<!-- Deep level nesting -->
+<div>
+    <section>
+        <p>
+            Things are good today. 
+            <span>
+                Really Good!
+            </span>
+        </p>
+    </section>
+</div>
+
+<!-- space and tabs do not matter -->
+<div><p> I love <span> spaned </span> content</p> </div>
+
+<!-- Some tags need to be nested -->
+<ul>
+    <li> Peas</li>
+    <li>Carrots </li>
+    <li>Potatoes </li>
+</ul>
+
+<table>
+    <tr>
+        <td> Peas</td>
+        <td> Carrots</td>
+        <td> Potatoes</td>
+    </tr>
+    <tr>
+        <td>Ice Cream</td>
+        <td>Pancakes</td>
+        <td>Baklava</td>
+    </tr>
+</table>
+
+<!-- gotchas -->
+
+<!-- opening and closing tags mixed up -->
+<div>
+    <p>
+        <span>
+        Some content to use
+    </p>
+        </span>
+</div>
+
+<!-- bad practices -->
+<!-- Using hr to draw line is not symantic -->
+<hr />
+<hr />
+<hr />
+
+<b>B is bold. IT is not symantic but is a style. HTML is not supposed to use style</b>
+<i> Like B I means itallic. HTML is not supposed to represent style.</i>
+
+
