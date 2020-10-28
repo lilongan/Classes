@@ -5,10 +5,14 @@
     </head>
     <body>
         <h1>H1 Tag - You can write your thoughts here</h1>
-        <h2>H2 Tag - Or rant about whatever grinds your gears</h2>
-        <h3>H3 Tag - Like that Jeremy guy, for example</h3>
-        <h4>H4 tag - I mean, like what is his deal?</h4>
-        <h5>H5 tag - Why does he drink so much Coke Zero? Weird...</h5>
+        <h2>H2 Tag - You can write your thoughts here</h2>
+        <h3>H3 Tag - You can write your thoughts here</h3>
+        <h4>H4 tag - You can write your thoughts here</h4>
+        <h5>H5 tag - You can write your thoughts here</h5>
+        <h6>H6 tag - You can write your thoughts here</h6>
+        <h7>H7 tag - h1-h6 tags. No h7 or greater tags</h7>
+        <h8>H8 tag - You can write your thoughts here</h8>
+        <h9>H9 tag - You can write your thoughts here</h9>
     </body>
 </html>
 
@@ -19,12 +23,52 @@
         <title>DcVt Learning Portal HTML 101</title>
     </head>
     <body>
-        <h1>This exercise is about nesting div tags</h1>
-        <div>This div contains this text and the div tag below.</div>
-            <div>Hi, I'm the div tag that was mentioned in my parent div! I contain this text and two other children divs</div>
-        
-        Hi! Our parent was just talking about us. Please make sure you indent this example appropriately.
-        Hi! Our parent was just talking about us. Please make sure you indent this example appropriately.
+        <h1>h1 tag only</h1>
+        <div>div tag only</div>
+        <span>span tag only</span>
+        <section>section tag only</section>
+        <p>p tag only</p>
+        <h2>h2 tag, simple nesting</h2>
+        <div><span>Simple nesting span tag inside div</span></div>
+        <div><section>Simple nesting section tag inside div</section></div>
+        <div><p>Simple nesting p tag inside div</p></div>
+        <h3>h3 tag, deep nesting</h3>
+        <div><span><p>Deep nesting p tag inside div'span</p></span></div>
+        <div><section><p>Deep nesting p tag inside div'section</p></section></div>
+        <div><section><span>Deep nesting span tag inside div'section</span></section></div>
+        <div><p><span>Deep nesting span tag inside div'p'span</span></p></div>
+        <div><section><p><span>Deep nesting span tag inside div'section'p'span</span></p></section></div>
+        <h4>h4 tag, more deep nesting</h4>
+        <div><p><div>Deep nesting div tag inside div'p</div></p></div>
+        <div><span><div>Deep nesting div tag inside div'span</div></span></div>
+        <div><section><div>Deep nesting div tag inside div'section</div></section></div>
+        <p><section><div>Deep nesting div tag inside p'section</div></section></p>
+        <p><span><div>Deep nesting div tag inside p'section</div></span></p>
+        <h5>h5 tag, needed nesting</h5>
+        <div><ul><li>Needed nesting li tag 1 inside div'ul</li>
+        <li>Needed nesting li tag 2 inside div'ul</li></ul></div>
+        <span><ul><li>Needed nesting li 1 tag inside span'ul</li>
+        <li>Needed nesting li 2 tag inside span'ul</li></ul></span>
+        <section><ul><li>Needed nesting li 1 tag inside section'ul</li>
+        <li>Needed nesting li 2 tag inside section'ul</li></ul></section>
+        <p><ul><li>Needed nesting li 1 tag inside p'ul</li>
+        <li>Needed nesting li 2 tag inside p'ul</li></ul></p>
+        <div><ol><li>Needed nesting li tag inside div'ul</li>
+        <li>Needed nesting li tag inside div'ul</li></ul></div>
+        <span><ol><li>Needed nesting li tag inside span'ul</li></ol></span>
+        <section><ol><li>Needed nesting li tag inside section'ul</li></ol></section>
+        <p><ol><li>Needed nesting li tag inside p'ul</li></ol></p>
+        <div><table><tr><td>Needed nesting td tag inside div'table'tr</td></tr></table></div>
+        <span><table><tr><td>Needed nesting td tag inside span'table'tr</td></tr></table></span>
+        <section><table><tr><td>Needed nesting td tag inside section'table'tr</td></tr></table></section>
+        <p><table><tr><td>Needed nesting td tag inside p'table'tr</td></tr></table></p>
+        <table><tr><td>Needed nesting td tag 1 inside table'tr</td></tr></table>
+        <table><tr><td>Needed nesting td tag 2 inside table'tr</td></tr></table>
+        <table><tr><td>Needed nesting td tag 3 inside table'tr</td></tr></table>
+        <h6>h6 tag, needed nesting</h6>
+
+
+        <!-- Hi! Our parent was just talking about us. Please make sure you indent this example appropriately.
 
     </body>
     </html>
@@ -35,6 +79,22 @@
         <title>DcVt Learning Portal HTML 101</title>
     </head>
     <body>
+
+        This exercise is about making lists
+
+        Here's what I like about lists:
+        
+            They're useful for displaying lists of stuff
+            That's about it
+            I'm gunna put another list item here because doing things in threes is cool
+        
+        When you make a list, do it in this order:
+        
+            Decide if it's an ordered list or not
+            If it's not an ordered list, use the ul tag, otherwise use the ol tag
+                Use li tags nested in the list for your list items
+                    Curveball! You can nest lists inside each other
+            You've got this, I believe in you!
 
     </body>
     </html>
