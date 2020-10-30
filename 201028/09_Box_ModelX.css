@@ -1,23 +1,80 @@
+body {
+    background-color: #d0e4fe;
+    font-size: 20px;
+}
 h1 {
-    text-decoration: underline;
     color: purple;
+    text-align: center;
+}
+p {
+    font-family: "Times New Roman", Serif;
+    font-size: 20px;
+    text-decoration-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    overflow: auto;
+    clear: both;
+}
+.header-menu {
+    float: right;
+    list-style-type: none;
+}
+.header-menu > li {
+    float: left;
+    padding-right: 10px;
+}
+.sidebar {
+    float: right;
+    padding: 10px;
+}
+.sidebar-menu {
+    float: right;
+    list-style-type: none;
+}
+.sidebar-menu > li {
+    float: left;
+    padding-right: 10px;
+}
+.list {
+    display: block;
+}
+.footer {
+    clear: both;
 }
 h2 {
     text-emphasis: none;
     color: green;
 }
+.card {
+    background-color: tan;
+    padding: 10px;
+}
 h3 {
-    text-decoration: 
-    color: blue;
+    /* text-decoration: underline */
+    color: blue
 }
 h4 {
+    text-decoration: underline;
     color: black;
 }
 h5 {
     color: red;
+    text-align: right;
+}
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly
+    align-items: center
+    background-color:
+    padding: 15px;
 }
 h6 {
     color: salmon;
+    font-size: 35px;
 }
 h7 {
     color: darkgrey;
@@ -26,5 +83,5 @@ h8 {
     color: navy;
 }
 h9 {
-    color: blue;
+    color: violet
 }
