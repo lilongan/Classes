@@ -1,0 +1,30 @@
+/* Tag Selector */
+a {
+font-weight:bold;
+background:blue;
+}
+
+div {text-decoration:underline; color:rbg(10,20,30)}
+
+/* Class Selector */
+.content-item {
+color:#2df;
+background:#efefef;
+}
+.nav-link {
+text-decoration:underline;
+}
+/* ID selectors */
+#main-content {
+color:red
+}
+/* While you CAN style by id it is considered a very very bad practice. Ids are for selecting and identifying with javascript.*/
+
+/* Psudo Selector*/
+h1:hover {
+background-color:darkturquoise;
+}
+
+.nav-item:first-child {
+text-decoration:underline;
+}
