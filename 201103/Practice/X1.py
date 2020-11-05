@@ -5,7 +5,9 @@ print("这个很有趣。") # Zhège hěn yǒuqù. This is fun.
 print("好极了！印刷。") # Hǎo jíle! Yìnshuā. Yay! Printing.
 print()
 print("我宁愿你“不”。") # Wǒ nìngyuàn nǐ “bù”. I'd much rather you 'not'.
-print("")
+print("\n\n\n")
 print("我“说”不要碰这个。") # Wǒ “shuō” bùyào pèng zhège. I "said" do not touch this.
-
+print("\n\n\n\n\n")
+print("你好，\n"+"  世界！") # Nǐ hǎo, shìjiè! Hello World!
+print("好极了！"+"\n  印刷。") # Hǎo jíle! Yìnshuā. Yay! Printing.
 
