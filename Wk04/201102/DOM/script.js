@@ -48,8 +48,6 @@ const listItemsLength = listItemsByClass.length
 console.log(listItemsLength)
 console.dir(listItemsLength)
 
-<script>
-{/* Uncaught SyntaxError: Unexpected token 'const' script.js.54*/}
 const headerElement = document.createElement('h1')
 headerElement.innerText = "js added h1"
 const listElement = document.createElement('ol')
@@ -63,10 +61,6 @@ const root = document.querySelector('#root')
 root.append(headerElement)
 root.append(listElement)
 listElement.append(listItemOne, listItemTwo, listItemThree)
-
-</script> /** Commenting script.js.54 error, then substitutes 
- * Uncaught SyntaxError: Invalid regular expression: missing /
- * script.js.68
 
 headerElement.id = "heading"
 listElement.id = "nav-list"
