@@ -1,5 +1,5 @@
+// script.js
 
-//script.js
 alert('Look I am loaded')
 console.log('This is in the console.')
 
@@ -48,6 +48,47 @@ const listItemsLength = listItemsByClass.length
 console.log(listItemsLength)
 console.dir(listItemsLength)
 
+let regularExpressionConstructor = new RegExp("abc");
+let regularExpressionLiteral = /cba/;
+
+const myRegex = /Hello World/
+const test = myRegex.test("Hello World")
+console.log(test)
+console.log(myRegex)
+
+// const button = document.querySelector('#myButton')
+//   button.addEventListener('click', function() {
+//   alert('click')
+// })  // Allows for multiple event clicks on top h1 only
+
+// const button = document.querySelector('#myButton')
+// button.addEventListener('click', function() {
+//   alert('click')
+// })  // Allows for multiple event clicks on top h1 only
+
+const button = document.querySelector('#myButton')
+function clickOnce(){
+  alert('click')
+  button.removeEventListener('click', clickOnce)
+}  // Allows for single event click on top h1 only
+  button.addEventListener('click', clickOnce)
+  console.log(button)
+  console.dir(button)
+  console.log(myButton)
+  console.dir(myButton)
+
+  window.addEventListener('resize', function(){
+    console.log(window.innerWidth)
+  })
+
+  document.addEventListener('click', event => {
+    if(event.target.classList.contains('box')){
+      event.target.style.backgroundColor = 'green'
+      event.target.innerText = 'Changed'
+    }
+
+  })
+
 const headerElement = document.createElement('h1')
 headerElement.innerText = "js added h1"
 const listElement = document.createElement('ol')
@@ -68,3 +109,20 @@ listElement.id = "nav-list"
 listElement.childNodes.forEach(item => {
   item.className = "nav-link"
 })
+
+const form = document.querySelector("form");
+const nameInput = document.querySelector("#name");
+
+function checkName() {
+  const myRegex = /[A-Za-z]+/;
+    if (!myRegex.test(nameInput.value)) {
+      nameInput.setCustomValidity(
+        "Please use only lowercase or uppercase letters, no numbers"
+      );
+    } else {
+      nameInput.setCustomValidity("");
+    } // See, MDN - Constraint Validation API 
+} // See also, DcLp CSS: invalid
+nameInput.addEventListener("change", checkName, false);
+
+console.log(form)

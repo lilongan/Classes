@@ -4,18 +4,88 @@
         <title>Test Selectors</title>
     </head>
     <body>
+        <style>
+            body {
+                margin: 0 auto;
+                max-width: 600px;
+            }
+            .box{
+              background: red;
+              font-size: 24px;
+              width: 100px;
+              height: 100px;
+              margin: 25px;
+            }
+        </style>
+        <fieldset> <!-- Field hidden while pw typed -->
+            <p> <!-- cf. MDN - Input -->
+                <label> Password (Form): 
+                    <input type="password" minlength="3" maxlength="12">
+                </label>
+            </p>
+        </fieldset>
+        <p class="box"></p>
         <h1>Document Object Model (DOM) h1</h1>
-        <h2 id="heading">Navigation h2</h2>
+        <p class="box"></p>
+    <h2 id="heading">Navigation h2</h2>
+    <p class="box"></p>
+    <div>
+            <!-- <button onclick="alert('clicked')" >Click me 1st!</button> -->
+            <button id="myButton">Click Me 1st!</button>
+        </div>
+        <p class="box"></p>
         <ul id="nav-list">
             <li class="nav-link">Home ul li</li>
             <li class="nav-link">Store ul li</li>
             <li class="nav-link">Contact ul li</li>
         </ul>
+        <p class="box"></p>
+        <div>
+            <!-- <button onclick="alert('clicked')" >Click me 2d!</button> -->
+            <button id="myButton">Click Me 2d!</button> <!-- Error check -->
+        </div>
+        <p class="box"></p>
         <div id="root" == $0></div>
         <main>
+            <p class="box"></p>
             <div id="main-idea" class="concept">
                 Some Main idea div
+            <p>
+                <p class="box"></p>
+                <button id="myButton">Click Me 3d!</button> <!-- Error check -->
+                <fieldset> <!-- Insufficient input for button use -->
+                    <p> <!-- Must have @ symbol -->
+                        <label> Email Address (Form):  
+                            <input type="email">
+                        </label>
+                    </p>
+                    <p> <!-- Must have intigers, no letters -->
+                        <label> Age1 (Form): 
+                            <input type="number" maxlength="3">
+                        </label>
+                    </p>
+                    <p>
+                        <label> Age2 (Form):
+                            <input type="number" min="5" max="130">
+                        </label>
+                    </p>
+                </fieldset>
+            </p>
+            <p>
+                <fieldset> <!-- cf. MDN - Regular Expressions -->
+                <legend>User Information (Form)</legend>
+                <label for="username">Username: </label>
+                <input
+                  id="username"
+                  name="username"
+                  type="text"
+                  title="use letters, numbers, and special characters: between 4 and 12 characters"
+                  pattern="[A-Za-z0-9]{4,12}"
+                />
+                </fieldset>
+            </p>
             </div>
+            <p class="box"></p>
             <p class="child-idea">
                 Child Idea 1 p
             </p>
@@ -25,7 +95,50 @@
             <p class="child-idea">
                 Child Idea 3 p
             </p>
+            <p class="box"></p>
+            <form>
+                <fieldset>
+                    <legend>User Information (Form)</legend>
+                    <p>
+                        <label for="name">Name: </label>
+                        <input id="name" name="name" type="text" required />
+                    </p>
+                    <p>
+                        <label for="email">Email Address: </label>
+                        <input id="email" name="email" type="email" required /> 
+                    </p>
+                    <p>
+                        <label for="password">Password: </label>
+                        <input id="password" name="password" type="password" required />
+                    </p>
+                </fieldset>
+                <button id="submit-button" type="submit">Submit</button>
+                <fieldset>
+                    <legend>Are You a Robot (Form)</legend>
+                    <p>
+                        <label for="robot-check">Please Type: <strong>I am a human</strong></label>
+                        <input id="robot-check" type="text" pattern="I am a human">
+                    </p>
+                </fieldset>
+                <!-- <button id="submit-button" type="submit">Submit</button> -->
+            </form>
+            <!-- <form>
+                <fieldset>
+                    <legend>User Info (form) html+js</legend>
+                    <label for="name">Name: </label>
+                    <input id="name" name="name" type="text" />
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form> -->
         </main>
+
+    <h1>Form with Required Field</h1>
+    <form method="POST">
+        <label for="weight-input">Weight</label>
+        <br />
+        <input type="number" min="50" max="530" id="weight-input" required />
+        <br />
+    </form>
         <script>
             // this is just for testing
             alert('Hello Browser')
