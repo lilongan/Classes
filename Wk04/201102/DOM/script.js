@@ -27,8 +27,8 @@ console.log(link)
 console.dir(link)
 
 const heading = document.querySelector('#heading')
-heading.innerText = 'Links h2' // Chg html text from js
-heading.style.color = "rgb(255, 0,0)" // Chg font color from black to red
+heading.innerText = 'Links h2' // Chg html text from w/in js
+heading.style.color = "rgb(155, 50,50)" // Chg font color from black to red
 console.log(heading)
 console.dir(heading)
 
