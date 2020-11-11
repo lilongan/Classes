@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+</html>
+    <head> 
+        <title>Test Selectors</title>
+    </head>
+    <body>
+      <form>
+        <fieldset>
+          <legend>User Information</legend>
+         <p>
+           <label for="first-name"> 名字 </label>
+           <input type="text" name="first-name" id="first-name" />
+          </p>
+          <p>
+            <label for="last-name"> 姓 </label>
+            <input type="text" name="Last-name" id="Last-name" />
+         </p>
+          <p>
+            <label for="address"> 家庭地址 </label>
+            <input type="text" name="address" id="address" />
+         </p>
+        </fieldset>
+        <input type="submit" id="submit-button" value="submit" />
+     </form>
+  
+     <form>
+       <fieldset>
+         <legend>Do you like programming?</legend>
+         <p>
+           <label>
+             <input type="radio" id="yes" name="question" value="yes" checked /> 是
+           </label>
+         </p>
+         <p>
+           <label> <input type="radio" id="no" name="question" value="no" /> 不是 </label>
+         </p>
+         <p>
+            <label> <input type="radio" id="maybe" name="question" value="maybe" /> 也许 </label>
+         </p>
+       </fieldset>
+     </form>
+
+     <fieldset>
+       <legend>
+        您喜欢哪种编程语言？ （选择多个）
+       </legend>
+       <p>
+         <label> <input type="checkbox" checked /> HTML </label>
+       </p>
+       <p>
+          <label> <input type="checkbox" /> CSS </label>
+        </p>
+       <p>
+          <label> <input type="checkbox" /> Javascript </label>
+        </p>
+        <p>
+          <label> <input type="checkbox" /> Python </label>
+        </p>
+      </fieldset>
+
+     <fieldset>
+       <label for="experience-input"> 告诉我们您的经验！ </label>
+        <p>
+         <textarea id="experience-input" name="experience">
+      You had a ...
+          </textarea>
+        </p>
+      </fieldset>
+
+      <fieldset>
+       <label for="genre-select"> What's Your favorite movie genre? </label>
+       <select name="genre" id="genre-select">
+          <option value="" disabled selected>--Please choose an option--</option>
+          <optgroup label="Foreign">
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+          </optgroup> <!-- See, js screen capture 201110(DcVt_Notes1_html-input_06d).jpg -->
+          <optgroup label="Domestic">
+            <option value="comedy">Comedy</option>
+            <option value="documentary">documentary</option>
+            <option value="horror">Horror</option>
+            <option value="mystery">Mystery</option>
+            <option value="Anime">Anime</option>
+          </optgroup>
+       </select>
+     </fieldset>
+
+    <script src="script.js"></script>
+  </body>
+</html>
