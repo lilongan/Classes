@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax-mini MetaWeather Project</title>
+</head>
+<body>
+    <!-- <script src="http://localhost:5432/ajax.js"></script>
+    <script> -->
+        <script src="ajax.js"></script>
+        <script src="data.json"></script>
+        <!-- <script>
+        ajax("data.json", (r)=>{
+        console.log(JSON.parse(r))
+    })
+    </script> -->
+    <div>Ajax Mini MetaWeather Project</div>
+    <input id="lat" name="lat" placeholder="lat">
+    <input id="lon" name="lon" placeholder="lon">
+    <button>Check</button>
+    <script src="ajax.js"></script>
+    <!-- <script>
+        let button = document.querySelector("button")
+        button.addEventListener("click", () => {
+            let lon = document.querySelector("#lon").value;
+            let lat = document.querySelector("#lat").value;
+            //Only if you have your own cors-anywhere
+            ajax("http://localhost:8080/" + `https://www.metaweather.com/api/location/search/?lattlong=${lat}, ${lon}`, (r) => {
+                let people = JSON.parse(r)
+                console.log(r)
+            })
+        })
+    </script> -->
+</body>
+</html>
