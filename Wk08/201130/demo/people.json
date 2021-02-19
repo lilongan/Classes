@@ -1,0 +1,32 @@
+db = {
+    posts:[
+        {
+            id:"001",
+            title:"Good Things", content:"Lorium ipsom"
+        },
+        {
+            id:"002",
+            title:"Bad Things", content:"FooBar"
+        }
+    ],
+    people:[
+        {
+            id:"p001",
+            name:"Clint"
+        },
+        {
+            id:"p002", 
+            name:"Anna"
+        }
+    ],
+    purples:[
+        {
+            id:1,
+            name:"eggplant"
+        },
+        {
+            id:2,
+            name:"grapes"
+        }
+    ]
+}

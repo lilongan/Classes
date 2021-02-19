@@ -1,0 +1,31 @@
+XHR Object
+
+To make your first AJAX request, you will use the XMLHttpRequest object.
+
+There is an event listening property on the object called onreadystatechange that will be triggered every time the request updates to the browser.
+
+Now that you have the event listener defined, you have to specify what kind of request method you want to use.
+
+For this lesson, we are going to stay focused on the GET method. You initialize the HTTP response method using the open() function. The first argument is the method type, the second argument is the URL to the resource.
+
+Finally, you call the send() function to execute the request.
+
+State Change
+
+When running the existing code, the onreadystatechange function fires multiple times. This is because there are multiple state changes on the request.
+
+For our code sample, we will check that the ready state is finished and the response is ready by checking to see if the ready state is at 4.
+
+Running this code you will see that the console log only appears once after the response is ready.
+
+Status Codes
+
+Even though we received a response, it may contain an error message instead of the data we want. Luckily, the server adds a status code to every response. By looking at the status code, we can determine if the request was successful.
+
+Congratulations! You made your first AJAX request! Looking back at our code, it was only 5 steps:
+
+    Create an XMLHttpRequest object
+    Add an onreadystatechange event handler function
+    Set your handler function to check for a final readyState and a successful status
+    open() the request
+    send() the request
